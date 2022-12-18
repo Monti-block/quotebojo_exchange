@@ -9382,6 +9382,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"immer@npm:^9.0.16":
+  version: 9.0.16
+  resolution: "immer@npm:9.0.16"
+  checksum: e9a5ca65c929b329da7a3b7beccf7984271cda7bdd47b2cab619eac3277dcd56598c211b55cc340786b6eff0c06652ac018808d9fd744443f06882364dece6bc
+  languageName: node
+  linkType: hard
+
 "immer@npm:^9.0.6, immer@npm:^9.0.7":
   version: 9.0.12
   resolution: "immer@npm:9.0.12"
@@ -10386,6 +10393,17 @@ __metadata:
   bin:
     jest: bin/jest.js
   checksum: 96f1d69042b3c6dfc695f2a4e4b0db38af6fb78582ad1a02beaa57cfcd77cbd31567d7d865c1c85709b7c3e176eefa3b2035ffecd646005f15d8ef528eccf205
+  languageName: node
+  linkType: hard
+
+"jotai-immer@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "jotai-immer@npm:0.1.0"
+  peerDependencies:
+    immer: "*"
+    jotai: "*"
+    react: ">=17.0.0"
+  checksum: 08f0f336ba0b4f3658ef74e57d77965c229312508976aff747b288274ef13e84e5ae342efd78f311be97a220ce13e6b8f1f9cdefd7eccdaccd310061046aac6f
   languageName: node
   linkType: hard
 
@@ -15815,6 +15833,8 @@ __metadata:
     "@web3-react/types": ^8.0.11-beta.0
     "@web3-react/walletconnect": ^8.0.25-beta.0
     buffer: ^6.0.3
+    immer: ^9.0.16
+    jotai-immer: ^0.1.0
     prettier: ^2.5.1
     react: ^17.0.2
     react-dom: ^17.0.2
