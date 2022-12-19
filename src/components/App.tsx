@@ -12,7 +12,7 @@ import Web3Connectors from './Web3Connectors'
 import styles from '../styles/Home.module.css'
 
 const TOKEN_LIST = 'https://gateway.ipfs.io/ipns/tokens.uniswap.org'
-const UNI = '0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984'
+const USDC = '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48'
 
 
 const theme: Theme = {
@@ -29,7 +29,8 @@ export default function App() {
   const provider = useActiveProvider()
 
   // The locale to pass to the SwapWidget.
-  // This is a value from the SUPPORTED_LOCALES exported by @uniswap/widgets.
+  // This is a value from the SUPPORTED_LOCALES exported by @uniswap/widgets. 
+  
   const [locale, setLocale] = useState<SupportedLocale>('en-US')
   const onSelectLocale = useCallback((e) => setLocale(e.target.value), [])
 
@@ -49,8 +50,9 @@ export default function App() {
       </div>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Quotebojo Exchange</h1>
-
+        
+        <h1> <img src="/Logo_Q_Web_blue_2.png" alt="Logo" width="350" height="93"></img></h1>
+        
         <div className={styles.demo}>
           <div className={styles.connectors} ref={connectors} tabIndex={-1}>
             <Web3Connectors />
@@ -66,7 +68,7 @@ export default function App() {
               onConnectWallet={focusConnectors}
               defaultInputTokenAddress="NATIVE"
               defaultInputAmount="1"
-              defaultOutputTokenAddress={UNI}
+              defaultOutputTokenAddress={USDC}
               convenienceFee={15}
               convenienceFeeRecipient='0xC022B4D80db9AD7c8c1A310a573421240A2aBCE1'
             />
