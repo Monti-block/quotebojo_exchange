@@ -1,24 +1,3 @@
-This is a [Create React App](https://create-react-app.dev/) project bootstrapped with [`create-react-app`](https://create-react-app.dev/docs/getting-started) to showcase how to integrate the @uniswap/widgets package in your own projects. It uses react-scripts@5.0.0.
-
-## widgets-cra5
-
-![Uniswap Widgets](uniswap-widgets.png)
-
----
-
-To start the demo:
-
-```bash
-yarn          # install dependencies
-yarn start    # run the development server
-# or
-npm           # install dependencies
-npm run start # run the development server
-```
-
-Navigate to [http://localhost:3000](http://localhost:3000) to see the widget.
-
----
 
 The `SwapWidget` component is passed everything it needs to render:
 
